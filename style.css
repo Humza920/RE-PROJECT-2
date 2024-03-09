@@ -37,3 +37,5 @@ border: 1px solid #ccc;
 margin-top: 5px;
 border-radius: 5px;
 }
+
+input,textarea,select:focus{outline-color: #0000ff;}
