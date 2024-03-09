@@ -1,7 +1,7 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family:Arial, Helvetica, sans-serif;}
+font-family:Arial, Hmarginelvetica, sans-serif;}
 
 body{background-color: #ccc;}
 
@@ -12,30 +12,71 @@ margin-top: 25px;
 
 .content{max-width: 600px;
 margin: 0 auto;
-background-color: #ffffff; 
+background-color: #000000; 
+color: #ffffff;
 padding: 20px;   
+border-radius: 20px;
 }
 
 
 .intro h1{font-size: 40px;
 font-weight: 750;}
 .intro span{font-size: 27px;
-color: #0000ff;} 
+color: #0000ff;
+transition: 0.5s ease-in;} 
 
 .form-content{margin-top: 40px;
-display: grid;
-grid-template-columns: repeat(auto-fit , minmax(200px,1fr));
-gap: 20px;
-margin-top: 30px;}
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px,1fr));
+    gap: 20px;
+    }
 
-.control{flex-direction: column;}
+.control{
+flex-direction: column;}
 
 label{font-size: 14px;}
 
 input,textarea,select{padding: 6px 10px;
-border: 1px solid #ccc;
+border: 2px solid #0000ff;
 margin-top: 5px;
 border-radius: 5px;
+background-color: #ffffff;
+transition: 1s ease-in;
 }
 
-input,textarea,select:focus{outline-color: #0000ff;}
+input,textarea,select:focus{outline-color: #ff0000;}
+.but{display: flex;
+justify-content: end;
+margin-top:20px ;}
+.but button{background-color: #ffffff;
+border-radius: 6px;
+padding: 8px;
+font-weight: 600;
+box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.1);
+border: 1px solid #0000ff;
+background-color: #0000ff;
+color: #ffffff;
+cursor: pointer;
+margin-top: 5px;
+transition: 0.5s ease-in;
+}
+
+select:hover{color: #000000;
+background-color: #ccc;
+transition: 1s ease-out;}
+input:hover{color: #000000;
+background-color: #ccc;
+transition: 1s ease-out;}
+textarea:hover{color: #000000;
+background-color: #ccc;
+transition: 1s ease-out;}
+
+button:hover{background-color: #ff0000;
+border: 1px solid #ff0000;
+transition: 0.5s ease-out;}
+span:hover{color: #ff0000;
+cursor: pointer;
+transition: 0.5s ease-out;}
+
+.text-area-control{grid-column: 1/span 2;}
+.text-area-control textarea{width: 550px;}
